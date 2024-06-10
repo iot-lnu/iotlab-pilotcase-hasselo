@@ -10,7 +10,7 @@ There are some lightning arrestors available, but let's not worry about that for
 
 ### Temperature and Humidity
 
-- [€34.90 - Dragino LHT65N-E31F LoRaWAN Temperature and Humidity Sensor](https://iot-shop.de/en/shop/dg-lht65n-331f-dragino-6482?search=lht65&order=name+asc#attr=20512,20513,19923,19924,20514,20515,20516)
+- [€95 - Waterproof temperature sensor with two sensor probes, LoRaWAN](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/temperatursensor-med-tva-probe-utomhus-lorawan/?variationCode=20114848)
 
 ### Cold storage
 
