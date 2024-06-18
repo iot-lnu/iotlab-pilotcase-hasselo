@@ -1,5 +1,7 @@
 # iotlab-pilotcase-hasselö
 
+Hasselö, located in the Tjust archipelago between Västervik and Loftahammar in northern Småland, offers a variety of activities, accommodations, and services for visitors. The island, along with the neighboring Sladö nature reserve, features diverse landscapes including lush deciduous forests, barren pine forests, meadows, and bare rocks. Visitors can enjoy various lodging options such as hostels, cottages, guest harbors, and camping facilities.
+
 Hasselö aims to provide real-time water temperature information to visitors and ensure that ice cream freezers are properly monitored to prevent spoilage, including detecting if freezer doors are left open too long or if there is a power outage. A primary goal is to achieve reliable LoRaWAN coverage by strategically placing the antenna and using mappers to confirm coverage at different points of interest.
 
 ## LoRaWAN Gateway
