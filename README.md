@@ -24,6 +24,12 @@ The table below lists the sensors that we will use in the pilot case.
 | <img src="images/lorawan_smartplug.png" width="100" height="100"> | LoRaWAN Smart Plug | [€90 - LoRaWAN Smart Plug](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/lorawan-smartplug-styr-ditt-vagguttag/) |
 | ----------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 
+## Getting started
+
+To update the firmware on the Dragino DLOS8N Outdoor LoRaWAN Gateway, visit [this guide](firmware.md).
+
+To configure the Dragino DLOS8N Outdoor LoRaWAN Gateway for the Helium network, visit [this guide](helium.md).
+
 ## Results
 
 On July 17th, 2024, we installed the gateway and onboarded the sensors to the network ([This console](https://console.helium-iot.xyz/)). The Gateway was installed at the Hasselö hostel [57.83469981504573, 16.73108550629707](https://www.google.com/maps/place/Hassel%C3%B6+vandrarhem/@57.8347755,16.7300333,16.18z/data=!4m9!3m8!1s0x46585d5f8604aeb9:0x5ba1198a782808a0!5m2!4m1!1i2!8m2!3d57.8343886!4d16.7309925!16s%2Fg%2F1v41z1s4?entry=ttu) (blue dot on the map).
