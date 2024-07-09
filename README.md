@@ -4,6 +4,13 @@ Hasselö, located in the Tjust archipelago between Västervik and Loftahammar in
 
 Hasselö aims to provide real-time water temperature information to visitors and ensure that ice cream freezers are properly monitored to prevent spoilage, including detecting if freezer doors are left open too long or if there is a power outage. A primary goal is to achieve reliable LoRaWAN coverage by strategically placing the antenna and using mappers to confirm coverage at different points of interest.
 
+- [iotlab-pilotcase-hasselö](#iotlab-pilotcase-hasselö)
+  - [LoRaWAN Gateway](#lorawan-gateway)
+  - [LoRaWAN Sensors](#lorawan-sensors)
+  - [Getting started](#getting-started)
+    - [Sensor configuration](#sensor-configuration)
+  - [Results](#results)
+
 ## LoRaWAN Gateway
 
 The gateway we will use in the pilot case is the Dragino DLOS8N Outdoor LoRaWAN Gateway (8 channels). The gateway is IP65-rated and can be mounted on a pole or wall.
@@ -26,9 +33,15 @@ The table below lists the sensors that we will use in the pilot case.
 
 ## Getting started
 
-To update the firmware on the Dragino DLOS8N Outdoor LoRaWAN Gateway, visit [this guide](firmware.md).
+1. Update the firmware on the Dragino DLOS8N Outdoor LoRaWAN Gateway, visit [this guide](firmware.md).
 
-To configure the Dragino DLOS8N Outdoor LoRaWAN Gateway for the Helium network, visit [this guide](helium.md).
+2. Configure the Dragino DLOS8N Outdoor LoRaWAN Gateway for the Helium network, visit [this guide](helium.md).
+
+### Sensor configuration
+
+1. **Waterproof temperature sensor with two sensor probes, LoRaWAN**
+
+   - Configure the sensor to send every 6 hours (21600 seconds) by queueing the downlink message `0x01005460` under the `Device page` -> `Queue` -> fill in `0x01005460` and `Enqueue`. More on the configuration can be found under [4.1 Change Uplink Interval](http://wiki.dragino.com/xwiki/bin/view/Main/End%20Device%20AT%20Commands%20and%20Downlink%20Command/#H4.1ChangeUplinkInterval).
 
 ## Results
 
