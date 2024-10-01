@@ -31,8 +31,8 @@ The table below lists the sensors that we will use in the pilot case.
 | <img src="images/lorawan_smartplug.png" width="100" height="100"> | LoRaWAN Smart Plug | [€90 - LoRaWAN Smart Plug](https://www.direktronik.se/direktronik/overvakning/automationscada/lorawan/lorawan-smartplug-styr-ditt-vagguttag/) |
 | ----------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## Getting started
 
+## Getting started
 1. Update the firmware on the Dragino DLOS8N Outdoor LoRaWAN Gateway, visit [this guide](firmware.md).
 
 2. Configure the Dragino DLOS8N Outdoor LoRaWAN Gateway for the Helium network, visit [this guide](helium.md).
@@ -43,7 +43,13 @@ The table below lists the sensors that we will use in the pilot case.
 
    - Configure the sensor to send every 6 hours (21600 seconds) by queueing the downlink message `0x01005460` under the `Device page` -> `Queue` -> fill in `0x01005460` and `Enqueue`. More on the configuration can be found under [4.1 Change Uplink Interval](http://wiki.dragino.com/xwiki/bin/view/Main/End%20Device%20AT%20Commands%20and%20Downlink%20Command/#H4.1ChangeUplinkInterval).
 
+2. **Door/Windows sensor** 
+
+   - Configure the sensors to send an alarm when the door is open for more than 5 minutes (0x012c = 300 sec = 5 min). The configuration can be done by queueing the downlink message `0xA901012C` under the `Device page` -> `Queue` -> fill in `0xA901012C` and `Enqueue`. More on the configuration can be found under [4.6 Alarm Base on Timeout](http://wiki.dragino.com/xwiki/bin/view/Main/User%20Manual%20for%20LoRaWAN%20End%20Nodes/LDS02%20-%20LoRaWAN%20Door%20Sensor%20User%20Manual/#H4.6AlarmBaseonTimeout)
+
 ## Results
+
+### July 17th 2024  
 
 On July 17th, 2024, we installed the gateway and onboarded the sensors to the network ([This console](https://console.helium-iot.xyz/)). The Gateway was installed at the Hasselö hostel [57.83469981504573, 16.73108550629707](https://www.google.com/maps/place/Hassel%C3%B6+vandrarhem/@57.8347755,16.7300333,16.18z/data=!4m9!3m8!1s0x46585d5f8604aeb9:0x5ba1198a782808a0!5m2!4m1!1i2!8m2!3d57.8343886!4d16.7309925!16s%2Fg%2F1v41z1s4?entry=ttu) (blue dot on the map).
 
@@ -61,3 +67,15 @@ The results of the coverage test are shown in the map below. Unfortunately, we d
 ![alt text](/images/cargo_coverage.png)
 
 Unfortunately, we did not have a more detailed coverage map (like [mappers.helium.com](https://mappers.helium.com/)) since the hexagons that indicate the coverage are only created if the gateway (data-only or full) is onboarded to the Helium network (e.g. on the blockchain).
+
+### August 23th 2024
+
+We mounted the antenna (3dBi) higher up on the building and tested the coverage again. The coverage was a bit better but still not as good as we expected. 
+
+Configure the gateway to also send data to the Helium network.
+
+Door/Windows sensor- configure the the sensor to send a alarm when the door is open for more than 5 minutes. The sensors was placed on the ice cream freezer at the handelsboa building. 
+
+The map shows the coverage of the LoRaWAN network on Hasselö. The coverage is not as good as we expected,
+
+![alt text](images/coverage_map.png)
