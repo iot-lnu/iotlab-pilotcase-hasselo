@@ -79,3 +79,13 @@ Door/Windows sensor- configure the the sensor to send a alarm when the door is o
 The map shows the coverage of the LoRaWAN network on Hasselö. The coverage is not as good as we expected,
 
 ![alt text](images/coverage_map.png)
+
+## Options for Temperature Monitoring at Locations Using NB-IoT
+
+To obtain the temperature from other locations where there is no LoRaWAN coverage, it is possible to use a cellular solution. Here is an option that utilizes NB-IoT:
+
+[Dragino NB-IoT Temperature Sensor](https://www.direktronik.se/direktronik/overvakning/automationscada/nb-iot-narrowband/temperatursensor-nedsankbar-probe-utomhus-nb-iot/)
+
+This solution requires a SIM card to send data over the cellular network. One possible service provider is 1NCE, which offers a data plan for 10 EUR for 10 years. 
+Read more about it [here](https://1nce.com/en-eu/1nce-connect/10-euros-for-10-years?utm_term=1nce&utm_campaign=EU_EN_SEA_Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=2411696709&hsa_cam=12293113915&hsa_grp=126063216148&hsa_ad=641396199561&hsa_src=g&hsa_tgt=kwd-418009328290&hsa_kw=1nce&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiArva5BhBiEiwA-oTnXV3Rkjv887C1ijEncUr7avPk2MI7vz6jShpUc_ZihYZtSu5tTMseIhoC89AQAvD_BwE).
+
